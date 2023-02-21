@@ -7,7 +7,37 @@ body {
     margin: 0px;
 }
 
-.mmain-header {
+.main-header {
     background-color: burlywood;
-    
+    display: grid;
+    grid-template-columns: auto 2fr 1fr auto;
+}
+
+.navigation {
+    grid-column-start: 3;
+    align-self: end;
+}
+
+.navigation a {
+    padding: 15pt;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    background-color: bisque;
+
+}
+
+.banner {
+    background-image: url("view1.jpg");
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.banner h2 {
+    font-size: 300%;
 }
